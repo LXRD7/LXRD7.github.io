@@ -218,6 +218,10 @@ body{
         max-width: 100%;
     }
 
+    .login{
+        min-width: 90%;
+    }
+
     .text-right{
         text-align: left;
     }
