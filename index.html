@@ -1,10 +1,244 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Projectos Programación FrontEnd</title>
-  </head>
-  <body>
-    <a href="Unidad 1/Actividad 2. Clasificados compra-venta de autos./inicio.html"> Projecto 1 U1</a>
-  </body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reproductor de Audio</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    </head>
+    <body>
+
+      <div class="container">
+        <div class="card-group">
+            <div class="card">
+                <input type="image" src="imagen/Channel Tres - Top Down.jpg" class="card-img-top" onclick="javascript:reproducir(1)"/>
+                <div class="card-body">
+                    <h5 class="card-title">Top Down</h5>
+                    <p class="card-text">
+                      <audio id="audio_1" class="audio">
+                        <source src="audio/Channel Tres - Top Down.mp3" type="audio/mp3">
+                      </audio>
+                      <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups" id="div_btn_1" style="display:none;">
+                        <div class="btn-group me-2" role="group" aria-label="First group">
+                          <button type="button" class="btn btn-outline-dark" onclick="javascript:play('audio_1');">⏵</button>
+                          <button type="button" class="btn btn-outline-dark" onclick="javascript:pause('audio_1');">⏸</button>
+                          <button type="button" class="btn btn-outline-dark">3</button>
+                          <button type="button" class="btn btn-outline-dark">4</button>
+                        </div>
+                      </div>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Channel Trees</small>
+                </div>
+            </div>
+            <div class="card">
+                <input type="image" src="imagen/Kanye West - Gold Digger ft. Jamie Foxx.jpeg" class="card-img-top" onclick="javascript:reproducir(2)"/>
+                <div class="card-body">
+                    <h5 class="card-title">Gold Digger ft. Jamie Foxx</h5>
+                    <p class="card-text">
+                      <audio id="audio_2" class="audio">
+                        <source src="audio/Kanye West - Gold Digger ft. Jamie Foxx.mp3" type="audio/mp3">
+                      </audio>
+                      <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups" id="div_btn_2" style="display:none;">
+                        <div class="btn-group me-2" role="group" aria-label="First group">
+                          <button type="button" class="btn btn-outline-dark" onclick="javascript:play('audio_2');">⏵</button>
+                          <button type="button" class="btn btn-outline-dark" onclick="javascript:pause('audio_2');">⏸</button>
+                          <button type="button" class="btn btn-outline-dark">3</button>
+                          <button type="button" class="btn btn-outline-dark">4</button>
+                        </div>
+                      </div>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Kanye West</small>
+                </div>
+            </div>
+            <div class="card">
+                <input type="image" src="imagen/Don Toliver - No Idea.jpeg" class="card-img-top" onclick="javascript:reproducir(3)"/>
+                <div class="card-body">
+                    <h5 class="card-title">No Idea</h5>
+                    <p class="card-text">
+                      <audio id="audio_3" class="audio">
+                        <source src="audio/Don Toliver - No Idea.mp3" type="audio/mp3">
+                      </audio>
+                      <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups" id="div_btn_3" style="display:none;">
+                        <div class="btn-group me-2" role="group" aria-label="First group">
+                          <button type="button" class="btn btn-outline-dark" onclick="javascript:play('audio_3');">⏵</button>
+                          <button type="button" class="btn btn-outline-dark" onclick="javascript:pause('audio_3');">⏸</button>
+                          <button type="button" class="btn btn-outline-dark">3</button>
+                          <button type="button" class="btn btn-outline-dark">4</button>
+                        </div>
+                      </div>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Don Toliver</small>
+                </div>
+            </div>
+            <div class="card">
+                <input type="image" src="imagen/Ed Maverick, Muelas De Gallo - niño.jpeg" class="card-img-top" onclick="javascript:reproducir(4)"/>
+                <div class="card-body">
+                    <h5 class="card-title">niño</h5>
+                    <p class="card-text">
+                      <audio id="audio_4" class="audio">
+                        <source src="audio/Ed Maverick, Muelas De Gallo - niño.mp3" type="audio/mp3">
+                      </audio>
+                      <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups" id="div_btn_4" style="display:none;">
+                        <div class="btn-group me-2" role="group" aria-label="First group">
+                          <button type="button" class="btn btn-outline-dark" onclick="javascript:play('audio_4');">⏵</button>
+                          <button type="button" class="btn btn-outline-dark" onclick="javascript:pause('audio_4');">⏸</button>
+                          <button type="button" class="btn btn-outline-dark">3</button>
+                          <button type="button" class="btn btn-outline-dark">4</button>
+                        </div>
+                      </div>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Ed Maverick, Muelas De Gallo</small>
+                </div>
+            </div>
+            <div class="card">
+                <input type="image" src="imagen/DLG. - Inside of my eyelids.jpeg" class="card-img-top" onclick="javascript:reproducir(5)"/>
+                <div class="card-body">
+                    <h5 class="card-title">Inside of my eyelids</h5>
+                    <p class="card-text">
+                      <audio id="audio_5" class="audio">
+                        <source src="audio/DLG. - Inside of my eyelids.mp3" type="audio/mp3">
+                      </audio>
+                      <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups" id="div_btn_5" style="display:none;">
+                        <div class="btn-group me-2" role="group" aria-label="First group">
+                          <button type="button" class="btn btn-outline-dark" onclick="javascript:play('audio_5');">⏵</button>
+                          <button type="button" class="btn btn-outline-dark" onclick="javascript:pause('audio_5');">⏸</button>
+                          <button type="button" class="btn btn-outline-dark">3</button>
+                          <button type="button" class="btn btn-outline-dark">4</button>
+                        </div>
+                      </div>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">DLG.</small>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="card-group">
+          <div class="card">
+            <input type="image" src="imagen/Kid Cudi - Pursuit Of Happiness.jpeg" class="card-img-top" onclick="javascript:reproducir(6)"/>
+            <div class="card-body">
+                <h5 class="card-title">Pursuit Of Happiness</h5>
+                <p class="card-text">
+                  <audio id="audio_6" class="audio">
+                    <source src="audio/Kid Cudi - Pursuit Of Happiness.mp3" type="audio/mp3">
+                  </audio>
+                  <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups"id="div_btn_6" style="display:none;">
+                    <div class="btn-group me-2" role="group" aria-label="First group">
+                      <button type="button" class="btn btn-outline-dark" onclick="javascript:play('audio_6');">⏵</button>
+                      <button type="button" class="btn btn-outline-dark" onclick="javascript:pause('audio_6');">⏸</button>
+                      <button type="button" class="btn btn-outline-dark">3</button>
+                      <button type="button" class="btn btn-outline-dark">4</button>
+                    </div>
+                  </div>
+                </p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Kid Cudi</small>
+            </div>
+        </div>
+        <div class="card">
+            <input type="image" src="imagen/NF - CLOUDS.jpeg" class="card-img-top" onclick="javascript:reproducir(7)"/>
+            <div class="card-body">
+                <h5 class="card-title">CLOUDS</h5>
+                <p class="card-text">
+                  <audio id="audio_7" class="audio">
+                    <source src="audio/NF - CLOUDS.mp3" type="audio/mp3">
+                  </audio>
+                  <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups" id="div_btn_7" style="display:none;">
+                    <div class="btn-group me-2" role="group" aria-label="First group">
+                      <button type="button" class="btn btn-outline-dark" onclick="javascript:play('audio_7');">⏵</button>
+                      <button type="button" class="btn btn-outline-dark" onclick="javascript:pause('audio_7');">⏸</button>
+                      <button type="button" class="btn btn-outline-dark">3</button>
+                      <button type="button" class="btn btn-outline-dark">4</button>
+                    </div>
+                  </div>
+                </p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">NF</small>
+            </div>
+        </div>
+        <div class="card">
+            <input type="image" src="imagen/Chief Kelly - Serenity.jpeg" class="card-img-top" onclick="javascript:reproducir(8)"/>
+            <div class="card-body">
+                <h5 class="card-title">Serenity</h5>
+                <p class="card-text">
+                  <audio id="audio_8" class="audio">
+                    <source src="audio/Chief Kelly - Serenity.mp3" type="audio/mp3">
+                  </audio>
+                  <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups" id="div_btn_8" style="display:none;">
+                    <div class="btn-group me-2" role="group" aria-label="First group">
+                      <button type="button" class="btn btn-outline-dark" onclick="javascript:play('audio_8');">⏵</button>
+                      <button type="button" class="btn btn-outline-dark" onclick="javascript:pause('audio_8');">⏸</button>
+                      <button type="button" class="btn btn-outline-dark">3</button>
+                      <button type="button" class="btn btn-outline-dark">4</button>
+                    </div>
+                  </div>
+                </p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Chief Kelly</small>
+            </div>
+        </div>
+        <div class="card">
+            <input type="image" src="imagen/Tipling Rock - Staring.jpeg" class="card-img-top" onclick="javascript:reproducir(9)"/>
+            <div class="card-body">
+                <h5 class="card-title">Staring</h5>
+                <p class="card-text">
+                  <audio id="audio_9" class="audio">
+                    <source src="audio/Tipling Rock - Staring.mp3" type="audio/mp3">
+                  </audio>
+                  <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups" id="div_btn_9" style="display:none;">
+                    <div class="btn-group me-2" role="group" aria-label="First group">
+                      <button type="button" class="btn btn-outline-dark" onclick="javascript:play('audio_9');">⏵</button>
+                      <button type="button" class="btn btn-outline-dark" onclick="javascript:pause('audio_9');">⏸</button>
+                      <button type="button" class="btn btn-outline-dark">3</button>
+                      <button type="button" class="btn btn-outline-dark">4</button>
+                    </div>
+                  </div>
+                </p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Tipling Rock</small>
+            </div>
+        </div>
+        <div class="card">
+            <input type="image" src="imagen/Ripple Green - Making a Man.jpeg" class="card-img-top" onclick="javascript:reproducir(10)"/>
+            <div class="card-body">
+                <h5 class="card-title">Making a Man</h5>
+                <p class="card-text">
+                  <audio id="audio_10" class="audio">
+                    <source src="audio/Ripple Green - Making a Man.mp3" type="audio/mp3">
+                  </audio>
+                  <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups" id="div_btn_10" style="display:none;">
+                    <div class="btn-group me-2" role="group" aria-label="First group">
+                      <button type="button" class="btn btn-outline-dark" onclick="javascript:play('audio_10');">⏵</button>
+                      <button type="button" class="btn btn-outline-dark" onclick="javascript:pause('audio_10');">⏸</button>
+                      <button type="button" class="btn btn-outline-dark">3</button>
+                      <button type="button" class="btn btn-outline-dark">4</button>
+                    </div>
+                  </div>
+                </p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Ripple Green</small>
+            </div>
+        </div>
+        </div>
+
+      </div>
+        <script ty src="bootstrap/js/bootstrap.min.js"></script>
+        <script ty src="js/controlador.js"></script>
+    </body>
 </html>
