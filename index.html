@@ -1,244 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Reproductor de Audio</title>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    </head>
-    <body>
 
-      <div class="container">
-        <div class="card-group">
-            <div class="card">
-                <input type="image" src="imagen/Channel Tres - Top Down.jpg" class="card-img-top" onclick="javascript:reproducir(1)"/>
-                <div class="card-body">
-                    <h5 class="card-title">Top Down</h5>
-                    <p class="card-text">
-                      <audio id="audio_1" class="audio">
-                        <source src="audio/Channel Tres - Top Down.mp3" type="audio/mp3">
-                      </audio>
-                      <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups" id="div_btn_1" style="display:none;">
-                        <div class="btn-group me-2" role="group" aria-label="First group">
-                          <button type="button" class="btn btn-outline-dark" onclick="javascript:play('audio_1');">⏵</button>
-                          <button type="button" class="btn btn-outline-dark" onclick="javascript:pause('audio_1');">⏸</button>
-                          <button type="button" class="btn btn-outline-dark">3</button>
-                          <button type="button" class="btn btn-outline-dark">4</button>
-                        </div>
-                      </div>
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Channel Trees</small>
-                </div>
-            </div>
-            <div class="card">
-                <input type="image" src="imagen/Kanye West - Gold Digger ft. Jamie Foxx.jpeg" class="card-img-top" onclick="javascript:reproducir(2)"/>
-                <div class="card-body">
-                    <h5 class="card-title">Gold Digger ft. Jamie Foxx</h5>
-                    <p class="card-text">
-                      <audio id="audio_2" class="audio">
-                        <source src="audio/Kanye West - Gold Digger ft. Jamie Foxx.mp3" type="audio/mp3">
-                      </audio>
-                      <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups" id="div_btn_2" style="display:none;">
-                        <div class="btn-group me-2" role="group" aria-label="First group">
-                          <button type="button" class="btn btn-outline-dark" onclick="javascript:play('audio_2');">⏵</button>
-                          <button type="button" class="btn btn-outline-dark" onclick="javascript:pause('audio_2');">⏸</button>
-                          <button type="button" class="btn btn-outline-dark">3</button>
-                          <button type="button" class="btn btn-outline-dark">4</button>
-                        </div>
-                      </div>
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Kanye West</small>
-                </div>
-            </div>
-            <div class="card">
-                <input type="image" src="imagen/Don Toliver - No Idea.jpeg" class="card-img-top" onclick="javascript:reproducir(3)"/>
-                <div class="card-body">
-                    <h5 class="card-title">No Idea</h5>
-                    <p class="card-text">
-                      <audio id="audio_3" class="audio">
-                        <source src="audio/Don Toliver - No Idea.mp3" type="audio/mp3">
-                      </audio>
-                      <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups" id="div_btn_3" style="display:none;">
-                        <div class="btn-group me-2" role="group" aria-label="First group">
-                          <button type="button" class="btn btn-outline-dark" onclick="javascript:play('audio_3');">⏵</button>
-                          <button type="button" class="btn btn-outline-dark" onclick="javascript:pause('audio_3');">⏸</button>
-                          <button type="button" class="btn btn-outline-dark">3</button>
-                          <button type="button" class="btn btn-outline-dark">4</button>
-                        </div>
-                      </div>
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Don Toliver</small>
-                </div>
-            </div>
-            <div class="card">
-                <input type="image" src="imagen/Ed Maverick, Muelas De Gallo - niño.jpeg" class="card-img-top" onclick="javascript:reproducir(4)"/>
-                <div class="card-body">
-                    <h5 class="card-title">niño</h5>
-                    <p class="card-text">
-                      <audio id="audio_4" class="audio">
-                        <source src="audio/Ed Maverick, Muelas De Gallo - niño.mp3" type="audio/mp3">
-                      </audio>
-                      <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups" id="div_btn_4" style="display:none;">
-                        <div class="btn-group me-2" role="group" aria-label="First group">
-                          <button type="button" class="btn btn-outline-dark" onclick="javascript:play('audio_4');">⏵</button>
-                          <button type="button" class="btn btn-outline-dark" onclick="javascript:pause('audio_4');">⏸</button>
-                          <button type="button" class="btn btn-outline-dark">3</button>
-                          <button type="button" class="btn btn-outline-dark">4</button>
-                        </div>
-                      </div>
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Ed Maverick, Muelas De Gallo</small>
-                </div>
-            </div>
-            <div class="card">
-                <input type="image" src="imagen/DLG. - Inside of my eyelids.jpeg" class="card-img-top" onclick="javascript:reproducir(5)"/>
-                <div class="card-body">
-                    <h5 class="card-title">Inside of my eyelids</h5>
-                    <p class="card-text">
-                      <audio id="audio_5" class="audio">
-                        <source src="audio/DLG. - Inside of my eyelids.mp3" type="audio/mp3">
-                      </audio>
-                      <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups" id="div_btn_5" style="display:none;">
-                        <div class="btn-group me-2" role="group" aria-label="First group">
-                          <button type="button" class="btn btn-outline-dark" onclick="javascript:play('audio_5');">⏵</button>
-                          <button type="button" class="btn btn-outline-dark" onclick="javascript:pause('audio_5');">⏸</button>
-                          <button type="button" class="btn btn-outline-dark">3</button>
-                          <button type="button" class="btn btn-outline-dark">4</button>
-                        </div>
-                      </div>
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">DLG.</small>
-                </div>
-            </div>
-            
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reproductor Audio/Video</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
 
-        <div class="card-group">
-          <div class="card">
-            <input type="image" src="imagen/Kid Cudi - Pursuit Of Happiness.jpeg" class="card-img-top" onclick="javascript:reproducir(6)"/>
-            <div class="card-body">
-                <h5 class="card-title">Pursuit Of Happiness</h5>
-                <p class="card-text">
-                  <audio id="audio_6" class="audio">
-                    <source src="audio/Kid Cudi - Pursuit Of Happiness.mp3" type="audio/mp3">
-                  </audio>
-                  <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups"id="div_btn_6" style="display:none;">
-                    <div class="btn-group me-2" role="group" aria-label="First group">
-                      <button type="button" class="btn btn-outline-dark" onclick="javascript:play('audio_6');">⏵</button>
-                      <button type="button" class="btn btn-outline-dark" onclick="javascript:pause('audio_6');">⏸</button>
-                      <button type="button" class="btn btn-outline-dark">3</button>
-                      <button type="button" class="btn btn-outline-dark">4</button>
-                    </div>
-                  </div>
-                </p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">Kid Cudi</small>
-            </div>
-        </div>
-        <div class="card">
-            <input type="image" src="imagen/NF - CLOUDS.jpeg" class="card-img-top" onclick="javascript:reproducir(7)"/>
-            <div class="card-body">
-                <h5 class="card-title">CLOUDS</h5>
-                <p class="card-text">
-                  <audio id="audio_7" class="audio">
-                    <source src="audio/NF - CLOUDS.mp3" type="audio/mp3">
-                  </audio>
-                  <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups" id="div_btn_7" style="display:none;">
-                    <div class="btn-group me-2" role="group" aria-label="First group">
-                      <button type="button" class="btn btn-outline-dark" onclick="javascript:play('audio_7');">⏵</button>
-                      <button type="button" class="btn btn-outline-dark" onclick="javascript:pause('audio_7');">⏸</button>
-                      <button type="button" class="btn btn-outline-dark">3</button>
-                      <button type="button" class="btn btn-outline-dark">4</button>
-                    </div>
-                  </div>
-                </p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">NF</small>
-            </div>
-        </div>
-        <div class="card">
-            <input type="image" src="imagen/Chief Kelly - Serenity.jpeg" class="card-img-top" onclick="javascript:reproducir(8)"/>
-            <div class="card-body">
-                <h5 class="card-title">Serenity</h5>
-                <p class="card-text">
-                  <audio id="audio_8" class="audio">
-                    <source src="audio/Chief Kelly - Serenity.mp3" type="audio/mp3">
-                  </audio>
-                  <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups" id="div_btn_8" style="display:none;">
-                    <div class="btn-group me-2" role="group" aria-label="First group">
-                      <button type="button" class="btn btn-outline-dark" onclick="javascript:play('audio_8');">⏵</button>
-                      <button type="button" class="btn btn-outline-dark" onclick="javascript:pause('audio_8');">⏸</button>
-                      <button type="button" class="btn btn-outline-dark">3</button>
-                      <button type="button" class="btn btn-outline-dark">4</button>
-                    </div>
-                  </div>
-                </p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">Chief Kelly</small>
-            </div>
-        </div>
-        <div class="card">
-            <input type="image" src="imagen/Tipling Rock - Staring.jpeg" class="card-img-top" onclick="javascript:reproducir(9)"/>
-            <div class="card-body">
-                <h5 class="card-title">Staring</h5>
-                <p class="card-text">
-                  <audio id="audio_9" class="audio">
-                    <source src="audio/Tipling Rock - Staring.mp3" type="audio/mp3">
-                  </audio>
-                  <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups" id="div_btn_9" style="display:none;">
-                    <div class="btn-group me-2" role="group" aria-label="First group">
-                      <button type="button" class="btn btn-outline-dark" onclick="javascript:play('audio_9');">⏵</button>
-                      <button type="button" class="btn btn-outline-dark" onclick="javascript:pause('audio_9');">⏸</button>
-                      <button type="button" class="btn btn-outline-dark">3</button>
-                      <button type="button" class="btn btn-outline-dark">4</button>
-                    </div>
-                  </div>
-                </p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">Tipling Rock</small>
-            </div>
-        </div>
-        <div class="card">
-            <input type="image" src="imagen/Ripple Green - Making a Man.jpeg" class="card-img-top" onclick="javascript:reproducir(10)"/>
-            <div class="card-body">
-                <h5 class="card-title">Making a Man</h5>
-                <p class="card-text">
-                  <audio id="audio_10" class="audio">
-                    <source src="audio/Ripple Green - Making a Man.mp3" type="audio/mp3">
-                  </audio>
-                  <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups" id="div_btn_10" style="display:none;">
-                    <div class="btn-group me-2" role="group" aria-label="First group">
-                      <button type="button" class="btn btn-outline-dark" onclick="javascript:play('audio_10');">⏵</button>
-                      <button type="button" class="btn btn-outline-dark" onclick="javascript:pause('audio_10');">⏸</button>
-                      <button type="button" class="btn btn-outline-dark">3</button>
-                      <button type="button" class="btn btn-outline-dark">4</button>
-                    </div>
-                  </div>
-                </p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">Ripple Green</small>
-            </div>
-        </div>
-        </div>
+<body>
 
+  <div class="card-group justify-content-center" ondragover="evdragover(event)" ondrop="evdrop(event,this)">
+
+    <div id="divVideo" style="display: none;">
+      <video id="panelVideo" width="1100" src="">
+
+      </video>
+    </div>
+
+    <div class="col-3">
+      <div class="card" id="caja" style="text-align: center;">
+        <input type="image" id="imagenCaja" src="imagen/fondo.jpg" class="card-img-top repro"
+          style="display: 'block'; padding: 1rem;" draggable="false">
+
+        <div class="card-body">
+          <h5 id="titulo" class="card-title">Arrastre aqui para reproducir</h5>
+          <p class="card-text">
+
+          <div style="display: none;" id="panelReproduccion">
+            <div class="col"><input type="range" class="form-range" step="any" id="barraReproduccion"
+                onchange="navegar()">
+            </div>
+            <div class="row">
+              <div class="col text-start"><label for="">0:00</label></div>
+              <div class="col text-end"><label for="barraReproduccion" id="tiempo"></label> </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-1"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                  fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" />
+                </svg></div>
+              <div class="col-6"> <input type="range" class="form-range" min="0" max="100" step="10" id="barraVolumen"
+                  onchange="cambiarVolumen()">
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-toolbar btn-controles" role="toolbar" aria-label="Toolbar with button groups" id="controles"
+            style="display:none;">
+            <div class="btn-group me-2" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-primary" onclick="javascript:play();"><svg
+                  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" />
+                </svg></button>
+              <button type="button" class="btn btn-outline-primary" onclick="javascript:pause();"><svg
+                  xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24"
+                  width="24px" fill="#000000">
+                  <g>
+                    <rect fill="none" height="24" width="24" />
+                    <rect fill="none" height="24" width="24" />
+                    <rect fill="none" height="24" width="24" />
+                  </g>
+                  <g>
+                    <g />
+                    <path
+                      d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M11,16H9V8h2V16z M15,16h-2V8h2V16z" />
+                  </g>
+                </svg></button>
+              <button type="button" class="btn btn-outline-primary" onclick="javascript:retroceder();"><svg
+                  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M11 18V6l-8.5 6 8.5 6zm.5-6l8.5 6V6l-8.5 6z" />
+                </svg></button>
+              <button type="button" class="btn btn-outline-primary" onclick="javascript:avanzar();"><svg
+                  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M4 18l8.5-6L4 6v12zm9-12v12l8.5-6L13 6z" />
+                </svg></button>
+            </div>
+          </div>
+
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted" id="textoTipo"></small>
+        </div>
       </div>
-        <script ty src="bootstrap/js/bootstrap.min.js"></script>
-        <script ty src="js/controlador.js"></script>
-    </body>
+    </div>
+
+  </div>
+
+  <div class="row p-2">
+    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+      <input type="radio" class="btn-check" name="btnradio" id="btnRadioMusica" autocomplete="off" checked
+        onclick="javascript:mostrarCanciones();">
+      <label class="btn btn-outline-primary" for="btnRadioMusica">Música</label>
+
+      <input type="radio" class="btn-check" name="btnradio" id="btnRadioVideo" autocomplete="off"
+        onclick="javascript:mostrarVideos();">
+      <label class="btn btn-outline-primary" for="btnRadioVideo">Vídeo</label>
+    </div>
+  </div>
+
+  <div id="listaCanciones"">
+  <div class=" card-group">
+    <div class="card" draggable="true" ondragstart="evdragstart(event)">
+      <input type="image" src="imagen/Channel Tres - Top Down.jpg" class="card-img-top" draggable="false" />
+      <div class="card-body">
+        <h5 class="card-title">Top Down</h5>
+        <p class="card-text">
+          <audio id="audio_1" class="audio">
+            <source src="audio/Channel Tres - Top Down.mp3" type="audio/mp3">
+          </audio>
+        </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Channel Trees</small>
+      </div>
+    </div>
+    <div class="card" draggable="true" ondragstart="evdragstart(event)">
+      <input type="image" src="imagen/Kanye West - Gold Digger ft. Jamie Foxx.jpeg" class="card-img-top"
+        draggable="false" />
+      <div class="card-body">
+        <h5 class="card-title">Gold Digger</h5>
+        <p class="card-text">
+          <audio id="audio_2" class="audio">
+            <source src="audio/Kanye West - Gold Digger ft. Jamie Foxx.mp3" type="audio/mp3">
+          </audio>
+        </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Kanye West</small>
+      </div>
+    </div>
+    <div class="card" draggable="true" ondragstart="evdragstart(event)">
+      <input type="image" src="imagen/Don Toliver - No Idea.jpeg" class="card-img-top" draggable="false" />
+      <div class="card-body">
+        <h5 class="card-title">No Idea</h5>
+        <p class="card-text">
+          <audio id="audio_3" class="audio">
+            <source src="audio/Don Toliver - No Idea.mp3" type="audio/mp3">
+          </audio>
+        </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Don Toliver</small>
+      </div>
+    </div>
+    <div class="card" draggable="true" ondragstart="evdragstart(event)">
+      <input type="image" src="imagen/Ed Maverick, Muelas De Gallo - niño.jpeg" class="card-img-top"
+        draggable="false" />
+      <div class="card-body">
+        <h5 class="card-title">niño</h5>
+        <p class="card-text">
+          <audio id="audio_4" class="audio">
+            <source src="audio/Ed Maverick, Muelas De Gallo - niño.mp3" type="audio/mp3">
+          </audio>
+        </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Ed Maverick</small>
+      </div>
+    </div>
+    <div class="card" draggable="true" ondragstart="evdragstart(event)">
+      <input type="image" src="imagen/DLG. - Inside of my eyelids.jpeg" class="card-img-top" draggable="false" />
+      <div class="card-body">
+        <h5 class="card-title">Inside of my eyelids</h5>
+        <p class="card-text">
+          <audio id="audio_5" class="audio">
+            <source src="audio/DLG. - Inside of my eyelids.mp3" type="audio/mp3">
+          </audio>
+        </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">DLG.</small>
+      </div>
+    </div>
+    <div class="card" draggable="true" ondragstart="evdragstart(event)">
+      <input type="image" src="imagen/Kid Cudi - Pursuit Of Happiness.jpeg" class="card-img-top" draggable="false" />
+      <div class="card-body">
+        <h5 class="card-title">Pursuit Of Happiness</h5>
+        <p class="card-text">
+          <audio id="audio_6" class="audio">
+            <source src="audio/Kid Cudi - Pursuit Of Happiness.mp3" type="audio/mp3">
+          </audio>
+        </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Kid Cudi</small>
+      </div>
+    </div>
+    <div class="card" draggable="true" ondragstart="evdragstart(event)">
+      <input type="image" src="imagen/NF - CLOUDS.jpeg" class="card-img-top" draggable="false" />
+      <div class="card-body">
+        <h5 class="card-title">CLOUDS</h5>
+        <p class="card-text">
+          <audio id="audio_7" class="audio">
+            <source src="audio/NF - CLOUDS.mp3" type="audio/mp3">
+          </audio>
+        </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">NF</small>
+      </div>
+    </div>
+    <div class="card" draggable="true" ondragstart="evdragstart(event)">
+      <input type="image" src="imagen/Chief Kelly - Serenity.jpeg" class="card-img-top" draggable="false" />
+      <div class="card-body">
+        <h5 class="card-title">Serenity</h5>
+        <p class="card-text">
+          <audio id="audio_8" class="audio">
+            <source src="audio/Chief Kelly - Serenity.mp3" type="audio/mp3">
+          </audio>
+        </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Chief Kelly</small>
+      </div>
+    </div>
+    <div class="card" draggable="true" ondragstart="evdragstart(event)">
+      <input type="image" src="imagen/Tipling Rock - Staring.jpeg" class="card-img-top" draggable="false" />
+      <div class="card-body">
+        <h5 class="card-title">Staring</h5>
+        <p class="card-text">
+          <audio id="audio_9" class="audio">
+            <source src="audio/Tipling Rock - Staring.mp3" type="audio/mp3">
+          </audio>
+        </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Tipling Rock</small>
+      </div>
+    </div>
+    <div class="card" draggable="true" ondragstart="evdragstart(event)">
+      <input type="image" src="imagen/Ripple Green - Making a Man.jpeg" class="card-img-top" draggable="false" />
+      <div class="card-body">
+        <h5 class="card-title">Making a Man</h5>
+        <p class="card-text">
+          <audio id="audio_10" class="audio">
+            <source src="audio/Ripple Green - Making a Man.mp3" type="audio/mp3">
+          </audio>
+        </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Ripple Green</small>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <div id="listaVideos" style="display: none;">
+    <div class="card-group">
+      <div class="card" draggable="true" ondragstart="evdragstart(event)">
+        <input type="image" src="imagen/NF - STORY.jpg" class="card-img-top" draggable="false" />
+        <div class="card-body">
+          <h5 class="card-title">Story</h5>
+          <p class="card-text">
+            <video id="video_1" class="video" hidden>
+              <source src="video/NF - STORY.mp4" type="video/mp4">
+            </video>
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">NF</small>
+        </div>
+      </div>
+      <div class="card" draggable="true" ondragstart="evdragstart(event)">
+        <input type="image" src="imagen/Burgos - UGLY.jpg" class="card-img-top"
+          draggable="false" />
+        <div class="card-body">
+          <h5 class="card-title">UGLY</h5>
+          <p class="card-text">
+            <video id="video_2" class="video" hidden>
+              <source src="video/Burgos - UGLY.mp4" type="video/mp4">
+            </video>
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Burgos</small>
+        </div>
+      </div>
+      <div class="card" draggable="true" ondragstart="evdragstart(event)">
+        <input type="image" src="imagen/Elliot Moss - Slip.jpg" class="card-img-top" draggable="false" />
+        <div class="card-body">
+          <h5 class="card-title">Slip</h5>
+          <p class="card-text">
+            <video id="video_3" class="video" hidden>
+              <source src="video/Elliot Moss - Slip.mp4" type="video/mp4">
+            </video>
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Elliot Moss</small>
+        </div>
+      </div>
+      <div class="card" draggable="true" ondragstart="evdragstart(event)">
+        <input type="image" src="imagen/Russ - What They Want.jpg" class="card-img-top"
+          draggable="false" />
+        <div class="card-body">
+          <h5 class="card-title">What They Want</h5>
+          <p class="card-text">
+            <video id="video_4" class="video" hidden>
+              <source src="video/Russ - What They Want.mp4" type="video/mp4">
+            </video>
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Russ</small>
+        </div>
+      </div>
+      <div class="card" draggable="true" ondragstart="evdragstart(event)">
+        <input type="image" src="imagen/Lil Peep - hellboy.jpg" class="card-img-top" draggable="false" />
+        <div class="card-body">
+          <h5 class="card-title">hellboy</h5>
+          <p class="card-text">
+            <video id="video_5" class="video" hidden>
+              <source src="video/Lil Peep - hellboy.mp4" type="video/mp4">
+            </video>
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Lil Peep</small>
+        </div>
+      </div>
+      <div class="card" draggable="true" ondragstart="evdragstart(event)">
+        <input type="image" src="imagen/Jonathan Roy - Keeping Me Alive.jpg" class="card-img-top" draggable="false" />
+        <div class="card-body">
+          <h5 class="card-title">Keeping Me Alive</h5>
+          <p class="card-text">
+            <video id="video_6" class="video" hidden>
+              <source src="video/Jonathan Roy - Keeping Me Alive.mp4" type="video/mp4">
+            </video>
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Jonathan Roy</small>
+        </div>
+      </div>
+      <div class="card" draggable="true" ondragstart="evdragstart(event)">
+        <input type="image" src="imagen/Apashe ft. Instasamka - Uebok.jpg" class="card-img-top" draggable="false" />
+        <div class="card-body">
+          <h5 class="card-title">Uebok</h5>
+          <p class="card-text">
+            <video id="video_7" class="video" hidden>
+              <source src="video/Apashe ft. Instasamka - Uebok.mp4" type="video/mp4">
+            </video>
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Apashe</small>
+        </div>
+      </div>
+      <div class="card" draggable="true" ondragstart="evdragstart(event)">
+        <input type="image" src="imagen/NF - When I Grow Up.jpg" class="card-img-top" draggable="false" />
+        <div class="card-body">
+          <h5 class="card-title">When I Grow Up</h5>
+          <p class="card-text">
+            <video id="video_8" class="video" hidden>
+              <source src="video/NF - When I Grow Up.mp4" type="video/mp4">
+            </video>
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">NF</small>
+        </div>
+      </div>
+      <div class="card" draggable="true" ondragstart="evdragstart(event)">
+        <input type="image" src="imagen/Dennis Lloyd - GFY.jpg" class="card-img-top" draggable="false" />
+        <div class="card-body">
+          <h5 class="card-title">GFY</h5>
+          <p class="card-text">
+            <video id="video_9" class="video" hidden>
+              <source src="video/Dennis Lloyd - GFY.mp4" type="video/mp4">
+            </video>
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Dennis Lloyd</small>
+        </div>
+      </div>
+      <div class="card" draggable="true" ondragstart="evdragstart(event)">
+        <input type="image" src="imagen/Макс Корж - Мотылёк.jpg" class="card-img-top" draggable="false" />
+        <div class="card-body">
+          <h5 class="card-title">Мотылёк</h5>
+          <p class="card-text">
+            <video id="video_10" class="video" hidden>
+              <source src="video/Макс Корж - Мотылёк.mp4" type="video/mp4">
+            </video>
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Макс Корж</small>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script ty src="bootstrap/js/bootstrap.min.js"></script>
+  <script ty src="js/controlador.js"></script>
+</body>
+
 </html>
