@@ -91,9 +91,8 @@ function updateUI() {
     barraReproduccion.min = multimedia.startTime;
     barraReproduccion.max = longitud;
     barraReproduccion.value = multimedia.currentTime;
-    document.getElementById("tiempo").innerHTML = formatTime(
-        multimedia.currentTime
-    );
+    document.getElementById("tiempo").innerHTML = "<b>"+formatTime(multimedia.currentTime)+"</b>";
+    document.getElementById("duracion").innerHTML = formatTime(longitud);
 }
 
 function formatTime(time) {

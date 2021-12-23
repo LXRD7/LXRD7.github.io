@@ -30,12 +30,16 @@
           <p class="card-text">
 
           <div style="display: none;" id="panelReproduccion">
+            <div class="row">
+              <div class="col text-center"><label for="barraReproduccion" id="tiempo"></label> </div>
+            </div>
             <div class="col"><input type="range" class="form-range" step="any" id="barraReproduccion"
                 onchange="navegar()">
             </div>
             <div class="row">
               <div class="col text-start"><label for="">0:00</label></div>
-              <div class="col text-end"><label for="barraReproduccion" id="tiempo"></label> </div>
+              <div class="col text-end" id="duracion"><label for=""></label></div>
+
             </div>
 
             <div class="row justify-content-center">
